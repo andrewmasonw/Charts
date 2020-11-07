@@ -132,6 +132,7 @@ function drawChart() {
             ['Lat', 'Long', 'Name', 'Hiking']
         ];
 
+        //ISSUE STARTS HERE
         //loop to go match selection and create a new array
         for (i = 0; i < origData.length; i++) {
             if (origData[i][3] == selection) {
