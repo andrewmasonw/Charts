@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map with Filtered Data Set</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="form-container">
+            <h1>Find A Park to take a Hike:</h1>
+            <p>Use the dropdown below to find out which Texas State Parks have hiking or not</p>
+            <form id="form1" onchange="drawChart()">
+                <select id="thedropdown">
+                <option value="0">Choose Hiking</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            </form>
+            <div class="table-container" id="tableWrapper" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Texas State Parks</th>
+                        <th>Hiking:</th>
+                    </thead>
+                    <tbody id="mapanswer"></tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="map-container">
+            <div class="map" id="map_div"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_s_6mCSPBYSb2bAS1-hJsybiUeA9AuGI" async defer></script>
+</body>
+
+</html>

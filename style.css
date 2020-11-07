@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 3px 0px 12px rgba(0, 0, 0, .25);
+    z-index: 3;
+}
+
+.map-container {
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+.map {
+    height: 100vh;
+    width: 100%;
+}
+
+.table-container {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow: scroll;
+    border: rgba(0, 0, 0, .50);
+}
+
+table {
+    border: rgba(0, 0, 0, .50);
+}
+
+thead {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
