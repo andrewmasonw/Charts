@@ -1,7 +1,6 @@
 google.charts.load('current', {
     'packages': ['map']
 }, { packages: ['corechart', 'bar'] });
-//'mapsApiKey': 'AIzaSyA_s_6mCSPBYSb2bAS1-hJsybiUeA9AuGI'
 google.charts.setOnLoadCallback(drawChart);
 
 //data is formatted for google map
